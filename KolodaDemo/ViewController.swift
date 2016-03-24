@@ -93,6 +93,8 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
    //     photoView?.photoTitleLabel?.text = photo.title
         return photoView!
     }
+    
+    //
 //    func kolodaViewForCardOverlayAtIndex(koloda: KolodaView, index: UInt) -> OverlayView? {
 //        return NSBundle.mainBundle().loadNibNamed("CustomOverlayView",
 //            owner: self, options: nil)[0] as? OverlayView
