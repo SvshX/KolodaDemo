@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3685C71CA48E68008C6164 /* CustomKolodaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3685C61CA48E68008C6164 /* CustomKolodaView.swift */; };
+		4C3685C91CA48EF2008C6164 /* KolodaPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C3685C81CA48EF2008C6164 /* KolodaPhotoView.xib */; };
+		4C3685CB1CA48FB7008C6164 /* KolodaPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3685CA1CA48FB7008C6164 /* KolodaPhotoView.swift */; };
+		4C96A7B71CA4528C00564F69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C96A7B61CA4528C00564F69 /* AppDelegate.swift */; };
+		4C96A7B91CA4528C00564F69 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C96A7B81CA4528C00564F69 /* ViewController.swift */; };
+		4C96A7BC1CA4528C00564F69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C96A7BA1CA4528C00564F69 /* Main.storyboard */; };
+		4C96A7BE1CA4528C00564F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C96A7BD1CA4528C00564F69 /* Assets.xcassets */; };
+		4C96A7C11CA4528C00564F69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C96A7BF1CA4528C00564F69 /* LaunchScreen.storyboard */; };
+		948695EFB28AA3247E5FCA86 /* Pods_KolodaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC17BACDBC371B1703940541 /* Pods_KolodaDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DE3FD75924A113E67AA75F9 /* Pods-KolodaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KolodaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KolodaDemo/Pods-KolodaDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4C3685C61CA48E68008C6164 /* CustomKolodaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomKolodaView.swift; sourceTree = "<group>"; };
+		4C3685C81CA48EF2008C6164 /* KolodaPhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KolodaPhotoView.xib; sourceTree = "<group>"; };
+		4C3685CA1CA48FB7008C6164 /* KolodaPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KolodaPhotoView.swift; sourceTree = "<group>"; };
+		4C96A7B31CA4528C00564F69 /* KolodaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KolodaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C96A7B61CA4528C00564F69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C96A7B81CA4528C00564F69 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C96A7BB1CA4528C00564F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C96A7BD1CA4528C00564F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C96A7C01CA4528C00564F69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C96A7C21CA4528C00564F69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5795C62CA5673B7A9D084C9E /* Pods-KolodaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KolodaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KolodaDemo/Pods-KolodaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CC17BACDBC371B1703940541 /* Pods_KolodaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KolodaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C96A7B01CA4528C00564F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948695EFB28AA3247E5FCA86 /* Pods_KolodaDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E77C20D6169A90EFDF10D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5795C62CA5673B7A9D084C9E /* Pods-KolodaDemo.debug.xcconfig */,
+				3DE3FD75924A113E67AA75F9 /* Pods-KolodaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C96A7AA1CA4528C00564F69 = {
+			isa = PBXGroup;
+			children = (
+				4C96A7B51CA4528C00564F69 /* KolodaDemo */,
+				4C96A7B41CA4528C00564F69 /* Products */,
+				06E77C20D6169A90EFDF10D9 /* Pods */,
+				C3AEB3CF1557E0CF3344DA36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C96A7B41CA4528C00564F69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C96A7B31CA4528C00564F69 /* KolodaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C96A7B51CA4528C00564F69 /* KolodaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4C96A7B61CA4528C00564F69 /* AppDelegate.swift */,
+				4C96A7B81CA4528C00564F69 /* ViewController.swift */,
+				4C96A7BA1CA4528C00564F69 /* Main.storyboard */,
+				4C96A7BD1CA4528C00564F69 /* Assets.xcassets */,
+				4C96A7BF1CA4528C00564F69 /* LaunchScreen.storyboard */,
+				4C96A7C21CA4528C00564F69 /* Info.plist */,
+				4C3685C61CA48E68008C6164 /* CustomKolodaView.swift */,
+				4C3685C81CA48EF2008C6164 /* KolodaPhotoView.xib */,
+				4C3685CA1CA48FB7008C6164 /* KolodaPhotoView.swift */,
+			);
+			path = KolodaDemo;
+			sourceTree = "<group>";
+		};
+		C3AEB3CF1557E0CF3344DA36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC17BACDBC371B1703940541 /* Pods_KolodaDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C96A7B21CA4528C00564F69 /* KolodaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C96A7C51CA4528C00564F69 /* Build configuration list for PBXNativeTarget "KolodaDemo" */;
+			buildPhases = (
+				775CB51A3DC3C4F293C9A8B1 /* Check Pods Manifest.lock */,
+				4C96A7AF1CA4528C00564F69 /* Sources */,
+				4C96A7B01CA4528C00564F69 /* Frameworks */,
+				4C96A7B11CA4528C00564F69 /* Resources */,
+				C069E314D4980B300C1B4A72 /* Embed Pods Frameworks */,
+				3557F48D1775D2A06EB5A938 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KolodaDemo;
+			productName = KolodaDemo;
+			productReference = 4C96A7B31CA4528C00564F69 /* KolodaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C96A7AB1CA4528C00564F69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Locals Labs";
+				TargetAttributes = {
+					4C96A7B21CA4528C00564F69 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V2758HQU4T;
+					};
+				};
+			};
+			buildConfigurationList = 4C96A7AE1CA4528C00564F69 /* Build configuration list for PBXProject "KolodaDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C96A7AA1CA4528C00564F69;
+			productRefGroup = 4C96A7B41CA4528C00564F69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C96A7B21CA4528C00564F69 /* KolodaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C96A7B11CA4528C00564F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C96A7C11CA4528C00564F69 /* LaunchScreen.storyboard in Resources */,
+				4C96A7BE1CA4528C00564F69 /* Assets.xcassets in Resources */,
+				4C96A7BC1CA4528C00564F69 /* Main.storyboard in Resources */,
+				4C3685C91CA48EF2008C6164 /* KolodaPhotoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3557F48D1775D2A06EB5A938 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KolodaDemo/Pods-KolodaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		775CB51A3DC3C4F293C9A8B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C069E314D4980B300C1B4A72 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KolodaDemo/Pods-KolodaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C96A7AF1CA4528C00564F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3685C71CA48E68008C6164 /* CustomKolodaView.swift in Sources */,
+				4C96A7B91CA4528C00564F69 /* ViewController.swift in Sources */,
+				4C96A7B71CA4528C00564F69 /* AppDelegate.swift in Sources */,
+				4C3685CB1CA48FB7008C6164 /* KolodaPhotoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C96A7BA1CA4528C00564F69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C96A7BB1CA4528C00564F69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C96A7BF1CA4528C00564F69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C96A7C01CA4528C00564F69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C96A7C31CA4528C00564F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C96A7C41CA4528C00564F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C96A7C61CA4528C00564F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5795C62CA5673B7A9D084C9E /* Pods-KolodaDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = KolodaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.localsLabs.KolodaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C96A7C71CA4528C00564F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE3FD75924A113E67AA75F9 /* Pods-KolodaDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = KolodaDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.localsLabs.KolodaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C96A7AE1CA4528C00564F69 /* Build configuration list for PBXProject "KolodaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C96A7C31CA4528C00564F69 /* Debug */,
+				4C96A7C41CA4528C00564F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C96A7C51CA4528C00564F69 /* Build configuration list for PBXNativeTarget "KolodaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C96A7C61CA4528C00564F69 /* Debug */,
+				4C96A7C71CA4528C00564F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C96A7AB1CA4528C00564F69 /* Project object */;
+}

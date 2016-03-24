@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KolodaPhotoView" customModule="KolodaDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R57-R8-c7M">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTo-FA-8HO">
+                    <rect key="frame" x="160" y="406" width="280" height="30"/>
+                    <color key="backgroundColor" red="0.54809868335723877" green="0.94970542192459106" blue="0.10565605014562607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4dI-c9-c8u"/>
+                    </constraints>
+                    <state key="normal" title="Back To Previous Photo">
+                        <color key="titleColor" red="1" green="0.13249370599999999" blue="0.099242814250000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="previousButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="7RT-xR-V1N"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R57-R8-c7M" secondAttribute="trailing" id="471-88-ygh"/>
+                <constraint firstAttribute="bottom" secondItem="R57-R8-c7M" secondAttribute="bottom" id="9go-FM-Uoo"/>
+                <constraint firstAttribute="trailing" secondItem="FTo-FA-8HO" secondAttribute="trailing" constant="160" id="Nhx-Xk-H8O"/>
+                <constraint firstItem="R57-R8-c7M" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SAM-ez-oDa"/>
+                <constraint firstItem="FTo-FA-8HO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="160" id="bnC-Go-LaL"/>
+                <constraint firstAttribute="bottom" secondItem="FTo-FA-8HO" secondAttribute="bottom" constant="164" id="egL-6C-Wwf"/>
+                <constraint firstItem="R57-R8-c7M" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="qpB-Jy-tVA"/>
+            </constraints>
+            <connections>
+                <outlet property="photoImageView" destination="R57-R8-c7M" id="q32-1H-ZRx"/>
+            </connections>
+        </view>
+    </objects>
+</document>
