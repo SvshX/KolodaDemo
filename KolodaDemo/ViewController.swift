@@ -37,7 +37,7 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
     
     @IBOutlet weak var kolodaView: CustomKolodaView!
     var photos = Array<KolodaPhoto>()
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         kolodaView.alphaValueSemiTransparent = kolodaAlphaValueSemiTransparent
@@ -88,8 +88,11 @@ class ViewController: UIViewController, KolodaViewDataSource, KolodaViewDelegate
     func koloda(koloda: KolodaView, viewForCardAtIndex index: UInt) -> UIView {
         let photoView = NSBundle.mainBundle().loadNibNamed("KolodaPhotoView",
             owner: self, options: nil)[0] as? KolodaPhotoView
+        
         let photo = photos[Int(index)]
         photoView?.photoImageView?.imageFromUrl(photo.photoUrlString)
+        photoView?.previousButton.addTarget(self, action: "previousButton:", forControlEvents: .TouchUpInside)
+        
    //     photoView?.photoTitleLabel?.text = photo.title
         return photoView!
     }

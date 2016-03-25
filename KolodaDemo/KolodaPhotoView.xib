@@ -40,6 +40,7 @@
             </constraints>
             <connections>
                 <outlet property="photoImageView" destination="R57-R8-c7M" id="q32-1H-ZRx"/>
+                <outlet property="previousButton" destination="FTo-FA-8HO" id="8Fd-mc-KXe"/>
             </connections>
         </view>
     </objects>

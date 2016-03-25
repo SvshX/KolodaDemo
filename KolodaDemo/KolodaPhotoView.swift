@@ -23,23 +23,40 @@ extension UIImageView {
 class KolodaPhotoView: UIView {
     
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var previousButton: UIButton!
+    
+    
     
     weak var kolodaPhotoViewDelegate: KolodaPhotoViewDelegate?
     var viewController = ViewController()
    
     
-    @IBAction func previousButton(sender: AnyObject) {
-        
-        kolodaPhotoViewDelegate = viewController
+    func previousButton(sender: AnyObject) {
+    
+      kolodaPhotoViewDelegate = viewController
         
         if (kolodaPhotoViewDelegate != nil) {
             kolodaPhotoViewDelegate?.previousButtonTapped()
-        }
-        else {
-            print("You forgot to set your reference in customTipDelegate to contain an instance of SwipeTipViewController!")
-        }
-        
+                }
+            else {
+                print("You forgot to set your reference in kolodaPhotoViewDelegate to contain an instance of ViewController!")
+                }
+    
+    
     }
+//
+//    @IBAction func previousButton(sender: AnyObject) {
+//        
+//        kolodaPhotoViewDelegate = viewController
+//        
+//        if (kolodaPhotoViewDelegate != nil) {
+//            kolodaPhotoViewDelegate?.previousButtonTapped()
+//        }
+//        else {
+//            print("You forgot to set your reference in kolodaPhotoViewDelegate to contain an instance of ViewController!")
+//        }
+//        
+//    }
     
     
     
